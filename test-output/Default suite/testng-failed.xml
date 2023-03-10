@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="testScript.ProductStorePageTest">
+        <methods>
+          <include name="deleteanItemTest"/>
+          <include name="tearDown"/>
+          <include name="addMulItemtoCart"/>
+          <include name="getExtent"/>
+          <include name="setup"/>
+          <include name="finishExtent"/>
+          <include name="placeAnOrderTest"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- testScript.ProductStorePageTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ProductStoreSuite">
+<parameter name="browser" value="chrome"></parameter>
+  <test thread-count="5" name="TestModuleOne">
+	<groups>
+		<run>
+			<include name="featureOne"></include> 
+<!--		<exclude name="featureOne"></exclude> -->
+<!--		<exclude name="featureTwo"></exclude> -->
+			<include name="featureTwo"></include>
+		</run>	
+	</groups>
+    <classes>
+      <class name="testScript.ProductStorePageTest"/>
+    </classes>
+  </test> <!-- TestModuleOne -->
+</suite> <!-- ProductStoreSuite -->

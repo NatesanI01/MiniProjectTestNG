@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="ProductStoreSuite" duration-ms="51710" started-at="2023-03-10T21:00:50 IST" finished-at="2023-03-10T21:01:42 IST">
+    <groups>
+      <group name="featureTwo">
+        <method signature="ProductStorePageTest.loginTest()[pri:1, instance:testScript.ProductStorePageTest@1cab0bfb]" name="loginTest" class="testScript.ProductStorePageTest"/>
+        <method signature="ProductStorePageTest.addMulItemtoCart(java.lang.String,java.lang.String)[pri:2, instance:testScript.ProductStorePageTest@1cab0bfb]" name="addMulItemtoCart" class="testScript.ProductStorePageTest"/>
+        <method signature="ProductStorePageTest.deleteanItemTest()[pri:3, instance:testScript.ProductStorePageTest@1cab0bfb]" name="deleteanItemTest" class="testScript.ProductStorePageTest"/>
+        <method signature="ProductStorePageTest.placeAnOrderTest()[pri:4, instance:testScript.ProductStorePageTest@1cab0bfb]" name="placeAnOrderTest" class="testScript.ProductStorePageTest"/>
+      </group> <!-- featureTwo -->
+      <group name="featureOne">
+        <method signature="ProductStorePageTest.loginTest()[pri:1, instance:testScript.ProductStorePageTest@1cab0bfb]" name="loginTest" class="testScript.ProductStorePageTest"/>
+        <method signature="ProductStorePageTest.placeAnOrderTest()[pri:4, instance:testScript.ProductStorePageTest@1cab0bfb]" name="placeAnOrderTest" class="testScript.ProductStorePageTest"/>
+      </group> <!-- featureOne -->
+    </groups>
+    <test name="TestModuleOne" duration-ms="51710" started-at="2023-03-10T21:00:50 IST" finished-at="2023-03-10T21:01:42 IST">
+      <class name="testScript.ProductStorePageTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:testScript.ProductStorePageTest@1cab0bfb]" name="setup" is-config="true" duration-ms="5369" started-at="2023-03-10T21:00:50 IST" finished-at="2023-03-10T21:00:56 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="getExtent()[pri:0, instance:testScript.ProductStorePageTest@1cab0bfb]" name="getExtent" is-config="true" duration-ms="329" started-at="2023-03-10T21:00:56 IST" finished-at="2023-03-10T21:00:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getExtent -->
+        <test-method status="PASS" signature="loginTest()[pri:1, instance:testScript.ProductStorePageTest@1cab0bfb]" name="loginTest" duration-ms="5840" started-at="2023-03-10T21:00:56 IST" finished-at="2023-03-10T21:01:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="finishExtent(org.testng.ITestResult)[pri:0, instance:testScript.ProductStorePageTest@1cab0bfb]" name="finishExtent" is-config="true" duration-ms="0" started-at="2023-03-10T21:01:02 IST" finished-at="2023-03-10T21:01:02 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTest status=SUCCESS method=ProductStorePageTest.loginTest()[pri:1, instance:testScript.ProductStorePageTest@1cab0bfb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finishExtent -->
+        <test-method status="PASS" signature="addMulItemtoCart(java.lang.String,java.lang.String)[pri:2, instance:testScript.ProductStorePageTest@1cab0bfb]" name="addMulItemtoCart" duration-ms="12168" started-at="2023-03-10T21:01:02 IST" data-provider="search" finished-at="2023-03-10T21:01:14 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nexus 6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Phones]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addMulItemtoCart -->
+        <test-method status="PASS" signature="deleteanItemTest()[pri:3, instance:testScript.ProductStorePageTest@1cab0bfb]" name="deleteanItemTest" duration-ms="19731" started-at="2023-03-10T21:01:14 IST" finished-at="2023-03-10T21:01:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteanItemTest -->
+        <test-method status="PASS" signature="finishExtent(org.testng.ITestResult)[pri:0, instance:testScript.ProductStorePageTest@1cab0bfb]" name="finishExtent" is-config="true" duration-ms="0" started-at="2023-03-10T21:01:14 IST" finished-at="2023-03-10T21:01:14 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addMulItemtoCart status=SUCCESS method=ProductStorePageTest.addMulItemtoCart(java.lang.String,java.lang.String)[pri:2, instance:testScript.ProductStorePageTest@1cab0bfb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finishExtent -->
+        <test-method status="PASS" signature="placeAnOrderTest()[pri:4, instance:testScript.ProductStorePageTest@1cab0bfb]" name="placeAnOrderTest" duration-ms="7211" started-at="2023-03-10T21:01:34 IST" finished-at="2023-03-10T21:01:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeAnOrderTest -->
+        <test-method status="PASS" signature="finishExtent(org.testng.ITestResult)[pri:0, instance:testScript.ProductStorePageTest@1cab0bfb]" name="finishExtent" is-config="true" duration-ms="0" started-at="2023-03-10T21:01:34 IST" finished-at="2023-03-10T21:01:34 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteanItemTest status=SUCCESS method=ProductStorePageTest.deleteanItemTest()[pri:3, instance:testScript.ProductStorePageTest@1cab0bfb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finishExtent -->
+        <test-method status="PASS" signature="finishExtent(org.testng.ITestResult)[pri:0, instance:testScript.ProductStorePageTest@1cab0bfb]" name="finishExtent" is-config="true" duration-ms="0" started-at="2023-03-10T21:01:41 IST" finished-at="2023-03-10T21:01:41 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=placeAnOrderTest status=SUCCESS method=ProductStorePageTest.placeAnOrderTest()[pri:4, instance:testScript.ProductStorePageTest@1cab0bfb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finishExtent -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testScript.ProductStorePageTest@1cab0bfb]" name="tearDown" is-config="true" duration-ms="963" started-at="2023-03-10T21:01:41 IST" finished-at="2023-03-10T21:01:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testScript.ProductStorePageTest -->
+    </test> <!-- TestModuleOne -->
+  </suite> <!-- ProductStoreSuite -->
+</testng-results>

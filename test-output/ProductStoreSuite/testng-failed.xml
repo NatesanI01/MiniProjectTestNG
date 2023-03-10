@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ProductStoreSuite]">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="TestModuleOne(failed)">
+    <groups>
+      <run>
+        <include name="featureOne"/>
+        <include name="featureTwo"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testScript.ProductStorePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="getExtent"/>
+          <include name="finishExtent"/>
+          <include name="setup"/>
+          <include name="placeAnOrderTest"/>
+        </methods>
+      </class> <!-- testScript.ProductStorePageTest -->
+    </classes>
+  </test> <!-- TestModuleOne(failed) -->
+</suite> <!-- Failed suite [ProductStoreSuite] -->
