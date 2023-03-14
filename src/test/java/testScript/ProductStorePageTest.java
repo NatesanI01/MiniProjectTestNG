@@ -18,6 +18,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.ITestResult;
@@ -58,9 +59,13 @@ public class ProductStorePageTest {
   @Parameters("browser")
   @BeforeTest(groups={"featureOne","featureTwo"})
   public void setup(String strBrowser) throws IOException {
-	  if(strBrowser.equalsIgnoreCase("chrome")) {
-		  WebDriverManager.chromedriver().setup();
-		  driver=new ChromeDriver();
+//	  if(strBrowser.equalsIgnoreCase("chrome")) {
+//		  WebDriverManager.chromedriver().setup();
+//		  driver=new ChromeDriver();
+//	  }
+	  if(strBrowser.equalsIgnoreCase("edge")) {
+		  WebDriverManager.edgedriver().setup();
+		  driver=new EdgeDriver();
 	  }
 	  driver.manage().window().maximize();
 	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -79,7 +84,7 @@ public class ProductStorePageTest {
 	  driver.findElement(By.xpath(readExcelData("username"))).sendKeys(temProp.getProperty("username"));
 	  driver.findElement(By.xpath(readExcelData("pwd"))).sendKeys(temProp.getProperty("pwd"));
 	  driver.findElement(By.xpath(readExcelData("loginBtn"))).click();
-	  Thread.sleep(4000);
+	  Thread.sleep(5000);
 	  Assert.assertEquals(driver.findElement(By.xpath(readExcelData("successMsg"))).getText(), "Welcome glass");
   }
   

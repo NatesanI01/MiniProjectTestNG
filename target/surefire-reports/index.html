@@ -181,7 +181,7 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;ProductStoreSuite&quot;&gt;
-  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;TestModuleOne&quot;&gt;
     &lt;groups&gt;
       &lt;run&gt;
@@ -266,24 +266,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'deleteanItemTest')
 data.setCell(0, 2, 'testScript.ProductStorePageTest')
-data.setCell(0, 3, 19697);
+data.setCell(0, 3, 20120);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'addMulItemtoCart')
 data.setCell(1, 2, 'testScript.ProductStorePageTest')
-data.setCell(1, 3, 13500);
+data.setCell(1, 3, 14650);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'placeAnOrderTest')
 data.setCell(2, 2, 'testScript.ProductStorePageTest')
-data.setCell(2, 3, 7859);
+data.setCell(2, 3, 7430);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'loginTest')
 data.setCell(3, 2, 'testScript.ProductStorePageTest')
-data.setCell(3, 3, 5779);
+data.setCell(3, 3, 7147);
 window.suiteTableData['ProductStoreSuite']= { tableData: data, tableDiv: 'times-div-ProductStoreSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 46 seconds</span>
+              <span class="suite-total-time">Total running time: 49 seconds</span>
               <div id="times-div-ProductStoreSuite">
               </div> <!-- times-div-ProductStoreSuite -->
             </div> <!-- times-div -->
@@ -311,49 +311,49 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">testScript.ProductStorePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">setup(chrome)</span>
+                <span class="method-name">setup(edge)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">getExtent</span>
-                <span class="method-start">5296 ms</span>
+                <span class="method-start">10283 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">5619 ms</span>
+                <span class="method-start">10835 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">finishExtent([TestResult name=loginTest status=SUCCESS method=ProductStorePageTest.loginTest()[pri:1, instance:te...)</span>
-                <span class="method-start">11403 ms</span>
+                <span class="method-start">17982 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">addMulItemtoCart(Nexus 6, Phones)</span>
-                <span class="method-start">11448 ms</span>
+                <span class="method-start">18017 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteanItemTest</span>
+                <span class="method-start">32667 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">finishExtent([TestResult name=addMulItemtoCart status=SUCCESS method=ProductStorePageTest.addMulItemtoCart(java.l...)</span>
-                <span class="method-start">24948 ms</span>
+                <span class="method-start">32667 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">deleteanItemTest</span>
-                <span class="method-start">24948 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">finishExtent([TestResult name=deleteanItemTest status=SUCCESS method=ProductStorePageTest.deleteanItemTest()[pri:...)</span>
-                <span class="method-start">44645 ms</span>
+                <span class="method-start">52789 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">placeAnOrderTest</span>
-                <span class="method-start">44647 ms</span>
+                <span class="method-start">52790 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">finishExtent([TestResult name=placeAnOrderTest status=SUCCESS method=ProductStorePageTest.placeAnOrderTest()[pri:...)</span>
-                <span class="method-start">52506 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">52507 ms</span>
+                <span class="method-start">60220 ms</span>
               </div> <!-- configuration-test after -->
+              <div class="configuration-method after">
+                <span class="method-name">finishExtent([TestResult name=placeAnOrderTest status=SUCCESS method=ProductStorePageTest.placeAnOrderTest()[pri:...)</span>
+                <span class="method-start">60220 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

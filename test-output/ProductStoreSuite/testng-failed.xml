@@ -13,10 +13,13 @@
       <class name="testScript.ProductStorePageTest">
         <methods>
           <include name="tearDown"/>
+          <include name="deleteanItemTest"/>
+          <include name="addMulItemtoCart" invocation-numbers="0"/>
           <include name="getExtent"/>
           <include name="finishExtent"/>
           <include name="setup"/>
           <include name="placeAnOrderTest"/>
+          <include name="loginTest"/>
         </methods>
       </class> <!-- testScript.ProductStorePageTest -->
     </classes>
